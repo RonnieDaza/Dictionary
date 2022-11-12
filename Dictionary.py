@@ -8,12 +8,14 @@ print("3 -> Exit (y/n)")
 choice = int(input("What do you want to do? (1-3) "))
 
 if choice == 1:
-    fullName = input("Full Name: ")
-    age = input("Age: ")
-    gender = input("Gender: ")
+    info = {"Jiya": "Caloocan"}
+    
+    name = input("Full Name: ")
+    age = int(input("Age: "))
     address = input("Address: ")
-    phoneNumber = input("Phone Number: ")
+    number = int(input("Phone Number: "))
+    gender = input("Gender: ")
     country = input("Country: ")
     email = input("Email: ")
-    date = input("Date: ")
-
+    info[name] = [age, address, number, gender, country, email]
+    print(info)

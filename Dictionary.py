@@ -6,7 +6,7 @@ print("2 -> Search")
 print("3 -> Exit (y/n)")
 print("-----------------------------")
 
-info =  {"Mark": ["19", "Manila", "09123456789"]}
+info =  {}
 
 while True:
     choice = int(input("What do you want to do? (1-3) "))
@@ -34,3 +34,9 @@ while True:
             "Gender": gender,
             "Email": email
         }
+    
+    elif choice == 3:
+        exit = input("Are you sure? (Yes/No) ")
+        if exit == "Yes":
+            break
+        
